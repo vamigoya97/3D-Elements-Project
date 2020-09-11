@@ -4,8 +4,7 @@ const searchParams = new URLSearchParams(window.location.search)
 const id = searchParams.get("id")
 console.log(id, "id")
 
-const elementDiv = document.querySelector("#element")
-const modelDiv = document.querySelector("#model")
+const elementSpan = document.querySelector("#element")
 
 fetch(`http://localhost:3000/elements/${id}`)
     .then(response => response.json())
@@ -15,13 +14,12 @@ fetch(`http://localhost:3000/elements/${id}`)
         const percentageCard = document.createElement('h3')
         const iframeCard = document.getElementById('3d-model').setAttribute("src", `${element.image_URL}`)
 
-        symbolCard.textContent = `SYMBOL : ${element.symbol}`
-        massCard.textContent = `ATOMIC MASS : ${element.atomic_mass}`
-        percentageCard.textContent = `PERCENTAGE ON EARTH : ${element.percentage}`
+        symbolCard.innerHTML = `<p>SYMBOL</p><br> <span style="font-size:50px;">${element.symbol}</span><br>`
+        massCard.innerHTML = `<p>ATOMIC MASS</p><br> <span style="font-size:50px;"> ${element.atomic_mass}</span><br>`
+        percentageCard.innerHTML = `<p>PERCENTAGE ON EARTH</p><br> <span style="font-size:50px;">${element.percentage}%</span><br>`
         
 
-        elementDiv.append(symbolCard, massCard, percentageCard)
-        modelDiv.appendChild(iframeCard)
+        elementSpan.append(symbolCard, percentageCard, massCard)
     })
     
 

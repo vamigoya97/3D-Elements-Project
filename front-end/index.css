@@ -12,6 +12,16 @@ p {
     font-size: 20px;
 }
 
+a {
+    color: #2c87f0;
+}
+a:visited {
+    color: #636;
+}
+a:hover, a:active, a:focus {
+    color:#c33;
+}
+
 div h3:nth-child(odd) {
     display: flex;
     justify-content: space-between;
@@ -29,8 +39,8 @@ div h3:nth-child(even) {
 }
 
 body {
-    background-image: url("earth.gif"), url("moving-stars.gif");
+    background-image: url("media/earth.gif"), url("media/moving-stars.gif");
     background-position: center, center;
-    background-size: 50% 50%, 100% 100%;
+    background-size: 500px 500px, cover;
     background-repeat: no-repeat, no-repeat;
 }
