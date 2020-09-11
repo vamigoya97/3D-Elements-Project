@@ -17,4 +17,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Authors
 <a href="https://www.linkedin.com/in/victor-amigo-76146115b/">Victor Amigo</a><br>
-<a href="http://linkedin.com/in/bradley-calkins-6841b31b1/"<Bradley Calkins</a>
+<a href="http://linkedin.com/in/bradley-calkins-6841b31b1/">Bradley Calkins</a>
